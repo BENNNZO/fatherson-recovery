@@ -1,0 +1,30 @@
+@utility page-container {
+    @apply @container mx-auto w-full max-w-page px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-48;
+}
+
+@utility section-stack {
+    --section-gap: --spacing(16);
+    @apply flex flex-col gap-(--section-gap);
+
+    /* biome-ignore-start lint/correctness/noUnknownFunction: theme() is a Tailwind function */
+    @media (width >= theme(--breakpoint-md)) {
+        --section-gap: --spacing(18);
+    }
+
+    @media (width >= theme(--breakpoint-lg)) {
+        --section-gap: --spacing(22);
+    }
+
+    @media (width >= theme(--breakpoint-xl)) {
+        --section-gap: --spacing(26);
+    }
+
+    @media (width >= theme(--breakpoint-2xl)) {
+        --section-gap: --spacing(36);
+    }
+    /* biome-ignore-end lint/correctness/noUnknownFunction: end */
+}
+
+@utility page-top {
+    @apply pt-8 md:pt-20;
+}

@@ -22,4 +22,21 @@
     body {
         @apply bg-base-200 text-body text-copy;
     }
+
+    :focus-visible {
+        @apply outline-2 outline-ring outline-offset-2;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+        /* biome-ignore-start lint/complexity/noImportantStyles: must beat every animation, including inline and runtime styles */
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        /* biome-ignore-end lint/complexity/noImportantStyles: end */
+    }
 }
