@@ -7,6 +7,18 @@
         @apply text-copy text-h2;
     }
 
+    h3 {
+        @apply text-copy text-h3;
+    }
+
+    h4 {
+        @apply text-copy text-h4;
+    }
+
+    h5 {
+        @apply text-copy text-h5;
+    }
+
     body {
         @apply bg-base-200 text-body text-copy;
     }
