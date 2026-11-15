@@ -1,9 +1,17 @@
 import type { Metadata } from "next"
-import { Geist } from "next/font/google"
+import { Cantarell, PT_Serif } from "next/font/google"
 import "./globals.css"
 
-const geistSans = Geist({
+const ptSerif = PT_Serif({
     subsets: ["latin"],
+    weight: ["400", "700"],
+    variable: "--font-pt-serif",
+})
+
+const cantarell = Cantarell({
+    subsets: ["latin"],
+    weight: ["400", "700"],
+    variable: "--font-cantarell",
 })
 
 export const metadata: Metadata = {
@@ -15,7 +23,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     return (
         <html
             lang="en"
-            className={`${geistSans.className} h-full antialiased`}
+            className={`${ptSerif.variable} ${cantarell.variable} h-full antialiased`}
         >
             <body className="flex min-h-full flex-col">{children}</body>
         </html>

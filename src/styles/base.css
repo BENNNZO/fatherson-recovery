@@ -1,0 +1,13 @@
+@layer base {
+    h1 {
+        @apply font-serif text-copy text-h1;
+    }
+
+    h2 {
+        @apply text-copy text-h2;
+    }
+
+    body {
+        @apply bg-base-200 text-body text-copy;
+    }
+}
