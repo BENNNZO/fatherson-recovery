@@ -4,7 +4,7 @@ import type { ComponentProps } from "react"
 import { mergeClasses } from "@/lib/mergeClasses"
 
 const BASE_CLASSES =
-    "rounded-sm border border-primary px-6 py-3 font-bold shadow-sm transition-[translate,filter,box-shadow] hover:brightness-125 active:translate-y-px active:brightness-95"
+    "inline-block rounded-sm border border-primary px-6 py-3 font-bold shadow-sm transition-[translate,filter,box-shadow] hover:brightness-125 active:translate-y-px active:brightness-95"
 const PRIMARY_CLASSES = "bg-primary text-copy-bright"
 const SECONDARY_CLASSES = "bg-base-100"
 
