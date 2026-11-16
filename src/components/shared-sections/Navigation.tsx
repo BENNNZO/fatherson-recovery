@@ -22,7 +22,7 @@ export default function Navigation() {
                     How It Works
                 </Link>
 
-                <Button href="/claim">Lookup Claim</Button>
+                <Button href="/claim">Look Up Claim</Button>
             </div>
         </nav>
     )
