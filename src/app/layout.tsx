@@ -1,5 +1,8 @@
 import type { Metadata } from "next"
 import { Cantarell, PT_Serif } from "next/font/google"
+
+import Navigation from "@/components/shared-sections/Navigation"
+
 import "./globals.css"
 
 const ptSerif = PT_Serif({
@@ -25,7 +28,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             lang="en"
             className={`${ptSerif.variable} ${cantarell.variable} h-full antialiased`}
         >
-            <body className="flex min-h-full flex-col">{children}</body>
+            <body>
+                <Navigation />
+                {children}
+            </body>
         </html>
     )
 }
