@@ -8,7 +8,7 @@ export default function LetterCTA() {
         <section className="bleed-x relative overflow-hidden">
             <div className="absolute inset-x-8 inset-y-0 rounded-lg bg-base-100" />
 
-            <div className="relative grid grid-cols-2 py-20">
+            <div className="relative grid grid-cols-2 py-24">
                 <div className="absolute -inset-x-8 bottom-0 z-10 h-16 bg-linear-to-t from-base-100" />
 
                 <div>
