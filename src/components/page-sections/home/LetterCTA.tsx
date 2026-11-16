@@ -14,7 +14,7 @@ export default function LetterCTA() {
                 <div>
                     <h2>Got a letter from us?</h2>
 
-                    <p className="mt-4 max-w-148">
+                    <p className="mt-4 max-w-148 text-copy-light">
                         Your letter has a claim number printed at the top. Enter it on our lookup page to see the name
                         and estimated amount on record.
                     </p>
