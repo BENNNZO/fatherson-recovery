@@ -35,3 +35,7 @@
     padding-inline: var(--bleed);
     scroll-padding-inline: var(--bleed);
 }
+
+@utility input-base {
+    @apply rounded-md border border-primary/50 bg-base-100 px-4.5 py-3;
+}
