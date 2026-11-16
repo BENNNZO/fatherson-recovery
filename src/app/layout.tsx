@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Cantarell, PT_Serif } from "next/font/google"
 
+import Footer from "@/components/shared-sections/Footer"
 import Navigation from "@/components/shared-sections/Navigation"
 
 import "./globals.css"
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <body>
                 <Navigation />
                 {children}
+                <Footer />
             </body>
         </html>
     )
