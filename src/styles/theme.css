@@ -1,6 +1,7 @@
 @theme {
     --color-copy: #1e2530;
     --color-copy-light: #566170;
+    --color-copy-bright: var(--color-base-200);
 
     --color-primary: #1b3a5c;
     --color-primary-pale: #e6edf4;
