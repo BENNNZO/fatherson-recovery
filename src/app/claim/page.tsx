@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 export default function ClaimPage() {
     return (
         <main className="page-container page-top section-stack overflow-hidden pb-(--section-gap)">
-            <div className="mx-auto max-w-256 text-center">
+            <div className="mx-auto w-full max-w-256 text-center">
                 <h1>Look up claim</h1>
 
                 <label className="mt-12 flex flex-col gap-2 text-left">
