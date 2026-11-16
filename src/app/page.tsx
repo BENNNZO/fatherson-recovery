@@ -5,7 +5,7 @@ import LetterCTA from "@/components/page-sections/home/LetterCTA"
 
 export default function Home() {
     return (
-        <main className="page-container page-top section-stack overflow-hidden pb-(--section-gap)">
+        <main className="page-container lg:page-top section-stack overflow-hidden pb-(--section-gap)">
             <Hero />
             <LetterCTA />
             <HowItWorks />
