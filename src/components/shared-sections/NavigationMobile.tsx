@@ -17,6 +17,7 @@ export default function NavigationMobile() {
                 <Link
                     href="/"
                     className="font-serif text-h3"
+                    onClick={close}
                 >
                     FATHERSON
                 </Link>
