@@ -5,8 +5,8 @@ import heroImage from "@/images/hero.png"
 
 export default function Hero() {
     return (
-        <section className="grid grid-cols-2 items-center gap-x-48">
-            <div>
+        <section className="grid grid-cols-2 gap-x-48">
+            <div className="pt-12">
                 <h1 className="text-h1-large">Your funds, recovered.</h1>
 
                 <p className="mt-6 max-w-128 text-copy-light">
