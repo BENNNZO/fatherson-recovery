@@ -13,6 +13,7 @@ export default function ClaimPage() {
                 <label className="mt-12 flex flex-col gap-2 text-left">
                     Claim number
                     <input
+                        autoFocus
                         type="text"
                         name="claimNumber"
                         className="input-base w-full px-6 py-4"
