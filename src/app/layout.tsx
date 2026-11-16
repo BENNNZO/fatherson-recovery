@@ -29,7 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             lang="en"
             className={`${ptSerif.variable} ${cantarell.variable} h-full antialiased`}
         >
-            <body>
+            <body className="flex min-h-full flex-col">
                 <Navigation />
                 {children}
                 <Footer />
