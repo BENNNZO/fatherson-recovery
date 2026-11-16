@@ -28,3 +28,10 @@
 @utility page-top {
     @apply pt-8 md:pt-20;
 }
+
+@utility bleed-x {
+    --bleed: calc((100vw - 100cqw) / 2);
+    margin-inline: calc(var(--bleed) * -1);
+    padding-inline: var(--bleed);
+    scroll-padding-inline: var(--bleed);
+}
