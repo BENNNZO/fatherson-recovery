@@ -8,7 +8,7 @@ export default function LetterCTA() {
         <section className="bleed-x relative overflow-hidden">
             <div className="absolute inset-x-8 inset-y-0 rounded-lg bg-base-100" />
 
-            <div className="relative grid grid-cols-2 py-16">
+            <div className="relative grid grid-cols-2 py-20">
                 <div className="absolute -inset-x-8 bottom-0 z-10 h-16 bg-linear-to-t from-base-100" />
 
                 <div>
@@ -30,7 +30,7 @@ export default function LetterCTA() {
                 <Image
                     alt="Example letter with the claim number at the top right"
                     src={letterImage}
-                    className="absolute top-16 right-0 w-1/2 rounded-lg shadow-sm"
+                    className="absolute top-20 right-0 w-1/2 rounded-lg shadow-sm"
                 />
             </div>
         </section>
