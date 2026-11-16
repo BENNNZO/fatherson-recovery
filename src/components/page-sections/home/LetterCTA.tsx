@@ -12,7 +12,7 @@ export default function LetterCTA() {
                 <div className="absolute -inset-x-8 bottom-0 z-10 h-16 bg-linear-to-t from-base-100" />
 
                 <div>
-                    <h2 className="font-serif">Got a letter from us?</h2>
+                    <h2>Got a letter from us?</h2>
 
                     <p className="mt-4 max-w-148">
                         Your letter has a claim number printed at the top. Enter it on our lookup page to see the name

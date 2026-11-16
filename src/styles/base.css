@@ -4,7 +4,7 @@
     }
 
     h2 {
-        @apply text-copy text-h2;
+        @apply font-serif text-copy text-h2;
     }
 
     h3 {
