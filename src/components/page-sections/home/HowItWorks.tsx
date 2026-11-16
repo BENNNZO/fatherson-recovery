@@ -6,7 +6,7 @@ export default function HowItWorks() {
     return (
         <section
             id="how-it-works"
-            className="grid scroll-mt-24 grid-cols-2"
+            className="grid scroll-mt-48 grid-cols-2"
         >
             <div>
                 <h2>Two Simple Steps.</h2>
