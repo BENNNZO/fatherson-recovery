@@ -1,11 +1,24 @@
+"use client"
+
+import { motion, useReducedMotion, useScroll, useTransform } from "motion/react"
 import Image from "next/image"
+import { useRef } from "react"
 
 import Button from "@/components/ui/Button"
 import heroImage from "@/images/hero.png"
 
 export default function Hero() {
+    const targetRef = useRef<HTMLElement>(null)
+    const reduceMotion = useReducedMotion()
+    const { scrollYProgress } = useScroll({ target: targetRef, offset: ["start end", "end start"] })
+
+    const yOffset = useTransform(scrollYProgress, [0, 1], [250, -250])
+
     return (
-        <section className="flex flex-col-reverse gap-x-12 lg:grid lg:grid-cols-2 xl:gap-x-48">
+        <section
+            ref={targetRef}
+            className="flex flex-col-reverse gap-x-12 lg:grid lg:grid-cols-2 xl:gap-x-48"
+        >
             <div className="relative z-10 mt-100 md:mt-6 lg:mt-12">
                 <h1 className="text-center text-h1-large sm:text-left">Your funds, recovered.</h1>
 
@@ -30,12 +43,17 @@ export default function Hero() {
             </div>
 
             <figure className="not-lg:-mx-[calc((100vw-100cqw)/2)]">
-                <Image
-                    alt=""
-                    src={heroImage}
-                    className="not-lg:mask-b-from-[calc(100%-(--spacing(48)))] not-lg:mask-b-to-100% not-lg:mask-radial-from-65% not-lg:mask-radial-to-90% not-lg:mask-radial-at-top-right fixed -z-10 h-124 object-cover md:relative md:not-lg:object-[0rem_-2rem] lg:h-156 lg:rounded-lg"
-                    preload
-                />
+                <motion.div
+                    style={{ y: reduceMotion ? 0 : yOffset }}
+                    className="fixed inset-x-0 -z-10 h-124 md:relative lg:h-156"
+                >
+                    <Image
+                        alt=""
+                        src={heroImage}
+                        className="not-lg:mask-b-from-[calc(100%-(--spacing(48)))] not-lg:mask-b-to-100% not-lg:mask-radial-from-65% not-lg:mask-radial-to-90% not-lg:mask-radial-at-top-right h-full w-full object-cover md:not-lg:object-[0rem_-2rem] lg:rounded-lg"
+                        preload
+                    />
+                </motion.div>
 
                 <figcaption className="mt-2 not-lg:hidden text-copy-light text-sm xl:text-body">
                     Founders: Benjamin Phillips Sr. and Benjamin Phillips Jr.
