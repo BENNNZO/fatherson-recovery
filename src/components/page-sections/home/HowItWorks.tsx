@@ -1,3 +1,5 @@
+import { FileCogIcon, UserRoundPenIcon } from "lucide-react"
+
 import Button from "@/components/ui/Button"
 
 import StepCard from "./StepCard"
@@ -6,34 +8,34 @@ export default function HowItWorks() {
     return (
         <section
             id="how-it-works"
-            className="grid scroll-mt-48 grid-cols-2"
+            className="flex scroll-mt-48 flex-col gap-18 sm:gap-24 xl:grid xl:grid-cols-2 xl:gap-8"
         >
             <div>
-                <h2>Two Simple Steps.</h2>
+                <h2 className="max-w-100 lg:max-w-148">Recover your surplus funds in two steps</h2>
 
-                <p className="mt-4 text-copy-light">
-                    Two steps on your side of the table. Everything is in <br />
+                <p className="mt-4 text-copy-light sm:whitespace-pre-line">
+                    Two steps on your side of the table. Everything is in {"\n"}
                     writing before we start.
                 </p>
 
                 <Button
                     href="#contact-us"
-                    className="mt-12"
+                    className="mt-8 not-xl:hidden sm:mt-12"
                 >
                     Contact Us
                 </Button>
             </div>
 
-            <ol className="divide-y divide-stroke/50 *:py-16 *:first:pt-0 *:last:pb-0">
+            <ol className="divide-stroke/50 *:py-10 *:first:pt-0 *:last:pb-0 sm:divide-y *:sm:py-16">
                 <StepCard
-                    stepNumber={1}
+                    Icon={UserRoundPenIcon}
                     title="You review and sign our agreement"
                     body="A plain, short contract that names the county, the property, the amount on record and our fee of [FEE]% of funds recovered. Take your time, and ask anyone you trust to read it."
                     footer="You pay nothing unless funds are released."
                 />
 
                 <StepCard
-                    stepNumber={2}
+                    Icon={FileCogIcon}
                     title="We file the paperwork with the county"
                     body="We prepare and file the claim, handle the back-and-forth with the county, and update you at each stage until a decision is made."
                     footer="Funds released to you, less our stated fee."
