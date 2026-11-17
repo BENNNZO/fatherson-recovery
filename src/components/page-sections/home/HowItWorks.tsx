@@ -8,12 +8,12 @@ export default function HowItWorks() {
     return (
         <section
             id="how-it-works"
-            className="flex scroll-mt-48 flex-col gap-18 sm:gap-24 xl:grid xl:grid-cols-2 xl:gap-8"
+            className="flex scroll-mt-48 flex-col gap-12 sm:gap-20 xl:grid xl:grid-cols-2 xl:gap-8"
         >
             <div>
-                <h2 className="max-w-100 lg:max-w-148">Recover your surplus funds in two steps</h2>
+                <h2 className="lg:max-w-140">Recover your surplus funds in two steps</h2>
 
-                <p className="mt-4 text-copy-light sm:whitespace-pre-line">
+                <p className="mt-4 text-copy-light md:whitespace-pre-line">
                     Two steps on your side of the table. Everything is in {"\n"}
                     writing before we start.
                 </p>
@@ -26,7 +26,7 @@ export default function HowItWorks() {
                 </Button>
             </div>
 
-            <ol className="divide-stroke/50 *:py-10 *:first:pt-0 *:last:pb-0 sm:divide-y *:sm:py-16">
+            <ol className="divide-y divide-stroke/50 *:py-10 *:first:pt-0 *:last:pb-0 *:sm:py-16">
                 <StepCard
                     Icon={UserRoundPenIcon}
                     title="You review and sign our agreement"
