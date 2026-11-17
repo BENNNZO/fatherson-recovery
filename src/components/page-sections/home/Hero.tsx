@@ -9,7 +9,7 @@ export default function Hero() {
             <div className="relative z-10 -mt-16 md:mt-6 lg:mt-12">
                 <h1 className="text-center text-h1-large sm:text-left">Your funds, recovered.</h1>
 
-                <p className="mt-6 max-w-128 text-center text-copy-light sm:text-left">
+                <p className="not-sm:mx-auto mt-6 max-w-128 text-center text-copy-light sm:text-left">
                     A father-and-son firm helping Georgia families recover surplus funds the county is holding in their
                     name. <strong>We handle the paperwork and file the claim for you.</strong>
                 </p>
