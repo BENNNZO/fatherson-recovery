@@ -3,12 +3,12 @@
 }
 
 @utility section-stack {
-    --section-gap: --spacing(16);
+    --section-gap: --spacing(20);
     @apply flex flex-col gap-(--section-gap);
 
     /* biome-ignore-start lint/correctness/noUnknownFunction: theme() is a Tailwind function */
     @media (width >= theme(--breakpoint-md)) {
-        --section-gap: --spacing(18);
+        --section-gap: --spacing(22);
     }
 
     @media (width >= theme(--breakpoint-lg)) {
