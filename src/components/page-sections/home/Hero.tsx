@@ -30,7 +30,7 @@ export default function Hero() {
                 <Image
                     alt=""
                     src={heroImage}
-                    className="not-lg:mask-b-from-[calc(100%-(var(--spacing)*64))] not-lg:mask-b-to-100% h-124 w-full object-cover not-lg:object-[0rem_-2rem] lg:rounded-lg"
+                    className="not-lg:mask-b-from-[calc(100%-(var(--spacing)*64))] not-lg:mask-b-to-100% h-124 w-full object-cover not-lg:object-[0rem_-2rem] lg:h-156 lg:rounded-lg"
                     preload
                 />
 
