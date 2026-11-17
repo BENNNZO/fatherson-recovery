@@ -12,15 +12,15 @@
     }
 
     @media (width >= theme(--breakpoint-lg)) {
-        --section-gap: --spacing(22);
-    }
-
-    @media (width >= theme(--breakpoint-xl)) {
         --section-gap: --spacing(26);
     }
 
-    @media (width >= theme(--breakpoint-2xl)) {
+    @media (width >= theme(--breakpoint-xl)) {
         --section-gap: --spacing(36);
+    }
+
+    @media (width >= theme(--breakpoint-2xl)) {
+        --section-gap: --spacing(40);
     }
     /* biome-ignore-end lint/correctness/noUnknownFunction: end */
 }
