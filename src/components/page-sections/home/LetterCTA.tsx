@@ -6,15 +6,15 @@ import letterImage from "@/images/letter-placeholder.png"
 export default function LetterCTA() {
     return (
         <section className="bleed-x relative overflow-hidden">
-            <div className="absolute inset-x-8 inset-y-0 rounded-lg bg-base-100" />
+            <div className="absolute inset-x-8 inset-y-0 rounded-lg bg-primary" />
 
             <div className="relative grid grid-cols-2 py-24">
-                <div className="absolute -inset-x-8 bottom-0 z-10 h-16 bg-linear-to-t from-base-100" />
+                <div className="absolute bottom-0 left-[calc(50%-4rem)] z-10 h-32 w-[calc(50%+8rem)] bg-linear-to-t from-primary" />
 
                 <div>
-                    <h2>Got a letter from us?</h2>
+                    <h2 className="text-copy-bright">Got a letter from us?</h2>
 
-                    <p className="mt-4 max-w-148 text-copy-light">
+                    <p className="mt-4 max-w-106 text-copy-bright">
                         Your letter has a claim number printed at the top. Enter it on our lookup page to see the name
                         and estimated amount on record.
                     </p>
@@ -22,6 +22,7 @@ export default function LetterCTA() {
                     <Button
                         href="/claim"
                         className="mt-12"
+                        secondary
                     >
                         Look Up Your Claim
                     </Button>
