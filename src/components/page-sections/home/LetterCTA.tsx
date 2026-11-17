@@ -13,13 +13,13 @@ export default function LetterCTA() {
                     <Image
                         alt="Example letter with the claim number at the top right"
                         src={letterImage}
-                        className="h-full w-full rounded-t-md object-cover object-top shadow-md"
+                        className="h-full w-full rounded-t-md object-cover object-top md:shadow-md"
                     />
 
-                    <div className="absolute -inset-x-8 -bottom-px h-48 bg-linear-to-t from-primary md:hidden lg:block" />
+                    <div className="absolute -inset-x-8 -bottom-px h-48 bg-linear-to-t from-4% from-primary md:hidden lg:block" />
                 </div>
 
-                <div className="relative mt-8 md:absolute md:bottom-6 md:left-0 md:mt-0 md:max-w-[calc(100%-16rem)] md:rounded-tr-lg md:bg-primary md:pt-6 md:pr-6 lg:static lg:max-w-none lg:rounded-none lg:p-0">
+                <div className="relative mt-6 md:absolute md:bottom-6 md:left-0 md:mt-0 md:max-w-[calc(100%-16rem)] md:rounded-tr-lg md:bg-primary md:pt-6 md:pr-6 lg:static lg:max-w-none lg:rounded-none lg:p-0">
                     <span
                         aria-hidden
                         className="absolute bottom-full left-0 hidden size-3 bg-[radial-gradient(circle_at_100%_0%,transparent_0.75rem,var(--color-primary)_calc(0.75rem+0.5px))] md:block lg:hidden"
